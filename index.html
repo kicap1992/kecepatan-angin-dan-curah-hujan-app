@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.ninjateam.org/html/my-admin/light/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jan 2018 03:47:34 GMT -->
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Monitoring Kecepatan Angin Dan Curah Hujan - Halaman Utama</title>
+
+	<!-- Main Styles -->
+	<link rel="stylesheet" href="assets/styles/style.min.css">
+
+	<!-- Material Design Icon -->
+	<link rel="stylesheet" href="assets/fonts/material-design/css/materialdesignicons.css">
+
+	<!-- mCustomScrollbar -->
+	<link rel="stylesheet" href="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+
+	<!-- Data Tables -->
+	<link rel="stylesheet" href="assets/plugin/datatables/media/css/dataTables.bootstrap.min.css">
+	<link rel="stylesheet" href="assets/plugin/datatables/extensions/Responsive/css/responsive.bootstrap.min.css">
+
+	<!-- Waves Effect -->
+	<link rel="stylesheet" href="assets/plugin/waves/waves.min.css">
+
+
+
+</head>
+
+<body>
+	<div class="main-menu">
+		<header class="header">
+			<a href="#" class="logo"><i class="ico mdi mdi-cube-outline"></i></a>
+			<button type="button" class="button-close fa fa-times js__menu_close"></button>
+			<div class="user">
+				<a href="#" class="avatar"><img src="assets/images/avatar-sm-5.jpg" alt=""><span
+						class="status online"></span></a>
+				<h5 class="name"><a href="#">Pengunjung</a></h5>
+				<h5 class="position">Pengunjung</h5>
+
+				<!-- /.control-wrap -->
+			</div>
+			<!-- /.user -->
+		</header>
+		<!-- /.header -->
+		<div class="content">
+
+			<div class="navigation">
+				<h5 class="title">Navigasi</h5>
+				<!-- /.title -->
+				<ul class="menu js__accordion">
+					<li class="current">
+						<a class="waves-effect" href="#"><i class="menu-icon mdi mdi-view-dashboard"></i><span>Dashboard</span></a>
+					</li>
+
+					<!-- <li>
+						<a class="waves-effect" href="calendar.html"><i
+								class="menu-icon mdi mdi-calendar"></i><span>Calendar</span></a>
+					</li> -->
+
+				</ul>
+				<!-- /.menu js__accordion -->
+
+			</div>
+			<!-- /.navigation -->
+		</div>
+		<!-- /.content -->
+	</div>
+	<!-- /.main-menu -->
+
+	<div class="fixed-navbar">
+		<div class="pull-left">
+			<button type="button" class="menu-mobile-button glyphicon glyphicon-menu-hamburger js__menu_mobile"></button>
+			<h1 class="page-title">Halaman Utama</h1>
+			<!-- /.page-title -->
+		</div>
+		<!-- /.pull-left -->
+		<div class="pull-right">
+
+			<!-- /.ico-item -->
+
+			<a href="#" class="ico-item mdi mdi-logout"></a>
+		</div>
+		<!-- /.pull-right -->
+	</div>
+	<!-- /.fixed-navbar -->
+
+	<div id="wrapper">
+		<div class="main-content">
+			<div class="row small-spacing">
+				<!-- <div class="col-xs-12">
+					<div class="box-content">
+						<h4 class="box-title">Peta Device</h4>
+
+					</div>
+=				</div> -->
+
+				<div class="col-lg-12 col-xs-12">
+					<div class="box-content">
+						<h4 class="box-title">Nilai Kecepatan Angin</h4>
+						<div class="form-group" style="overflow-x: auto;">
+							<table id="table_angin" class="table table-striped table-bordered display" style="width:100%">
+								<thead>
+									<tr>
+										<th>Waktu</th>
+										<th>Kecepatan m/d</th>
+										<th>Kecepatan km/j</th>
+										<th>RPS</th>
+										<th>RPM</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="waktu">...</td>
+										<td id="kecepatan_per_detik">...</td>
+										<td id="kecepatan_per_jam">...</td>
+										<td id="rps">...</td>
+										<td id="rpm">...</td>
+									</tr>
+
+								</tbody>
+
+							</table>
+						</div>
+					</div>
+					<!-- /.box-content -->
+
+
+					<div class="col-lg-12 col-xs-12">
+						<div class="box-content">
+							<h4 class="box-title">Nilai Curah Hujan</h4>
+							<div class="form-group" style="overflow-x: auto;">
+								<table id="table_angin" class="table table-striped table-bordered display" style="width:100%">
+									<thead>
+										<tr>
+											<th>Waktu</th>
+											<th>Curah Hujan/Menit</th>
+											<th>Curah Hujan/Jam</th>
+											<th>Curah Hujan/Hari</th>
+											<th>Jumlah Tip</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="waktu">...</td>
+											<td id="curah_hujan_per_menit">...</td>
+											<td id="curah_hujan_per_jam">...</td>
+											<td id="curah_hujan_per_hari">...</td>
+											<td id="jumlah_tip">...</td>
+										</tr>
+									</tbody>
+
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- /.col-lg-6 col-xs-12 -->
+
+
+					<!-- /.col-lg-6 col-xs-12 -->
+
+				</div>
+				<!-- /.row -->
+
+
+
+
+				<footer class="footer">
+					<ul class="list-inline">
+						<li>2022 © Kicap Karan.</li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</footer>
+			</div>
+			<!-- /.main-content -->
+		</div>
+		<!--/#wrapper -->
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="assets/script/html5shiv.min.js"></script>
+		<script src="assets/script/respond.min.js"></script>
+	<![endif]-->
+		<!-- 
+	================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="assets/scripts/jquery.min.js"></script>
+		<script src="assets/scripts/modernizr.min.js"></script>
+		<script src="assets/plugin/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="assets/plugin/nprogress/nprogress.js"></script>
+		<script src="assets/plugin/waves/waves.min.js"></script>
+
+		<!-- <script src="assets/plugin/datatables/media/js/jquery.dataTables.min.js"></script>
+		<script src="assets/plugin/datatables/media/js/dataTables.bootstrap.min.js"></script> -->
+		<script src="assets/scripts/main2.js"></script>
+		<script src="assets/scripts/main.min.js"></script>
+		<script src="assets/socket.io/client-dist/socket.io.js"></script>
+		<script>
+			// $('#table_angin').DataTable();
+			const socket = io('http://20.20.20.25:3001');
+			socket.on('connect', function () {
+				console.log('connected');
+			});
+
+			socket.on('angin', function (data) {
+				console.log(data);
+				$('#kecepatan_per_detik').html(data.kecepatan_per_detik);
+				$('#kecepatan_per_jam').html(data.kecepatan_per_jam);
+				$('#rps').html(data.rps);
+				$('#rpm').html(data.rpm);
+
+			});
+			socket.on('curah_hujan', function (data) {
+				console.log(data);
+				$('#curah_hujan_per_menit').html(data.curah_hujan_per_menit);
+				$('#curah_hujan_per_jam').html(data.curah_hujan_per_jam);
+				$('#curah_hujan_per_hari').html(data.curah_hujan_per_hari);
+				$('#jumlah_tip').html(data.jumlah_tip);
+
+			});
+
+			
+
+
+			function refreshTime() {
+				var dateString = new Date().toLocaleString("en-US", { timeZone: "Asia/Makassar" });
+				var formattedString = dateString.replace(", ", " - ");
+				$('.waktu').html(formattedString);
+			}
+
+			setInterval(refreshTime, 1000);
+		</script>
+</body>
+
+<!-- Mirrored from demo.ninjateam.org/html/my-admin/light/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jan 2018 03:48:09 GMT -->
+
+</html>
